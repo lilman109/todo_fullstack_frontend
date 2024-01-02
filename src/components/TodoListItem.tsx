@@ -15,10 +15,10 @@ const TodoListItem = ({
     <div>
       <h3>{todo.text}</h3>
       {todo.isCompleted && <p>Completed!</p>}
-      <button onClick={() => onClickComplete(todo.id)}>
+      <button onClick={() => onClickComplete(todo._id)}>
         Mark As Completed
       </button>
-      <button onClick={() => onClickDelete(todo.id)}>Delete</button>
+      <button onClick={() => onClickDelete(todo._id)}>Delete</button>
     </div>
   );
 };

@@ -12,7 +12,7 @@ const TodoList = ({ todos, onCompleteTodo, onDeleteTodo }: TodoListProp) => {
     <div>
       {todos.map((todo) => (
         <TodoListItem
-          key={todo.id}
+          key={todo._id}
           todo={todo}
           onClickComplete={onCompleteTodo}
           onClickDelete={onDeleteTodo}
